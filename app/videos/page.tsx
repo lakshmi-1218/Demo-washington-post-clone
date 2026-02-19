@@ -23,7 +23,7 @@ export default function VideosPage() {
         <div className="min-h-screen bg-background text-foreground">
             <Header />
             <Navigation />
-            <main className="max-w-[1024px] mx-auto px-2 sm:px-4">
+            <main className="max-w-[1200px] mx-auto px-2 sm:px-4 lg:px-6">
 
                 {/* hero section */}
                 <VideoHero />
@@ -32,22 +32,32 @@ export default function VideosPage() {
                 <FeaturedVideoRow />
 
                 {/* INLINE AD */}
-                <AdBanner variant="inline" />
+                <div className="my-4 sm:my-6">
+                    <AdBanner variant="inline" />
+                </div>
 
                 <ClimateViodesSection/>
                 <TechnologySection/>
 
                 {/* LEADERBOARD AD */}
-                <AdBanner variant="leaderboard" />
+                <div className="my-4 sm:my-6">
+                    <AdBanner variant="leaderboard" />
+                </div>
                 <WorldVideosSection/>
                 <NationalSection/>
-                <AdBanner variant="inline" />
+                <div className="my-4 sm:my-6">
+                    <AdBanner variant="inline" />
+                </div>
                 <PoliticsVideosSection/>
                 <ArtsEntertainmentVideosSection/>
-                <AdBanner variant="dark" />
+                <div className="my-4 sm:my-6">
+                    <AdBanner variant="dark" />
+                </div>
                 <DCMdVaVideosSection/>
                 <SportsVideosSection/>
-                <AdBanner variant="inline" />
+                <div className="my-4 sm:my-6">
+                    <AdBanner variant="inline" />
+                </div>
                 <MoreVideosSection/>
                 <Footer/>
             </main>

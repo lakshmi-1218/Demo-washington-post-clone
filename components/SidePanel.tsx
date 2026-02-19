@@ -5,7 +5,7 @@ import { Bell, ChevronRight, Search, X } from "lucide-react"
 import { useRouter } from "next/navigation"
 
 const menuItems = [
-    { title: "Home Page" },
+    { title: "Home Page", href:"/" },
     { title: "Latest", href: "/latest" },
     { title: "Politics",  href: "/politics",children: ["Courts & Law", "Democracy in America", "Fact Checker", "The Fix", "Policy", "Polling", "White House"] },
     { title: "Opinions", href: "/opinions", children: ["The Post's View", "Columns", "Guest Opinions", "Editorial Cartoons", "Letters to the Editor"] },

@@ -77,24 +77,22 @@ export function Header() {
             {/* CENTER */}
             <div className="flex-1 text-center">
               <Link href="/">
-                <h2 className="md:hidden font-heading text-lg font-bold tracking-tight">
-                  The Washington Post
+                <h2 className="sm:hidden font-heading text-lg font-bold tracking-tight">
+                  TWP
                 </h2>
 
-                <h1 className="hidden md:block font-heading text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
+                <h1 className="hidden sm:block font-heading text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                   The Washington Post
                 </h1>
               </Link>
-              <p className="hidden md:block"> Democracy Dies in Darkness</p>
+              <p className="hidden sm:block"> Democracy Dies in Darkness</p>
             </div>
 
             {/* RIGHT */}
             <div className="flex items-center gap-3">
-              {scrolled && (
-                <button className="md:hidden bg-blue-600 text-white font-bold px-4 py-1 text-xs rounded-full">
-                  Subscribe
-                </button>
-              )}
+              <button className="md:hidden bg-blue-600 text-white font-bold px-4 py-1 text-xs rounded-full">
+                Subscribe
+              </button>
               <button className="hidden md:inline-block bg-blue-600 text-white font-bold px-4 py-1.5 text-sm rounded-full">
                 Subscribe
               </button>

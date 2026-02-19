@@ -183,7 +183,7 @@ export default function MoreVideosSection() {
         More videos
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] xl:grid-cols-[1fr_300px] gap-6 sm:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] xl:grid-cols-[1fr_300px] gap-6 px-1 sm:gap-8">
         {/* LEFT CONTENT */}
         <div className="space-y-4 sm:space-y-6">
           {currentVideos.map((video, index) => (

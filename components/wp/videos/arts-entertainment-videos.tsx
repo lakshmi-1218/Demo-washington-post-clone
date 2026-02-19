@@ -18,7 +18,7 @@ export default function ArtsEntertainmentVideosSection() {
   const scroll = (d: "left" | "right") => scrollRef.current?.scrollBy({ left: d === "left" ? -scrollRef.current.offsetWidth : scrollRef.current.offsetWidth, behavior: "smooth" });
 
   return (
-    <section className="w-full bg-white mt-4 sm:mt-6 border-b border-gray-200 px-2 sm:px-4 lg:px-0">
+    <section className="w-full bg-white mt-4 sm:mt-6 border-b border-gray-200 px-1 sm:px-4 lg:px-0">
       <div className="flex items-center justify-between mb-3"><h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900">Arts & Entertainment Videos</h2></div>
       <div className="relative">
         <div ref={scrollRef} className="flex gap-3 sm:gap-4 overflow-x-auto scroll-smooth pb-3 scrollbar-hide">

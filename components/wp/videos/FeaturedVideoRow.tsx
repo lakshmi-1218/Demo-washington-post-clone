@@ -71,7 +71,7 @@ export default function FeaturedVideos() {
   };
 
   return (
-    <section className="max-w-[1200px] mx-auto relative mt-2 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <section className="max-w-[1200px] mx-auto relative mt-2 border-b-2 border-black px-1 sm:px-4 lg:p-0">
       {/* Header */}
       <div className="flex justify-between items-center mb-3 sm:mb-4">
         <div className="flex items-center">

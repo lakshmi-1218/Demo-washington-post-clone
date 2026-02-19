@@ -23,7 +23,7 @@ const mostReadArticles = [
 
 export function MostRead() {
   return (
-    <section className="mx-auto max-w-[1280px] mt-5 border-b-2 border-black">
+    <section className="mx-auto max-w-[1280px] mt-5 border-b-2 border-black px-2 lg:px-0">
       {/* <div className="pt-4"> */}
         <h2 className="font-serif font-bold text-[18px] text-wp-dark mb-6">
           Most Read
