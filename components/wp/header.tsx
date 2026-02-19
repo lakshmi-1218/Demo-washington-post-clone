@@ -3,6 +3,7 @@ import { useRef, useState,useEffect } from "react"
 import SidePanel from "../SidePanel"
 import NotificationPanel from "../NotificationPanel"
 import { Bell } from "lucide-react"
+import Link from "next/link"
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -75,16 +76,16 @@ export function Header() {
 
             {/* CENTER */}
             <div className="flex-1 text-center">
-              <h2 className="md:hidden font-heading text-lg font-bold tracking-tight">
-                {scrolled ? "TWP" : "The Washington Post"}
-              </h2>
+              <Link href="/">
+                <h2 className="md:hidden font-heading text-lg font-bold tracking-tight">
+                  The Washington Post
+                </h2>
 
-              <div className="hidden md:block">
-                <h1 className="font-heading text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
+                <h1 className="hidden md:block font-heading text-[32px] lg:text-[40px] leading-tight tracking-tight text-black">
                   The Washington Post
                 </h1>
-                <p> Democracy Dies in Darkness</p>
-              </div>
+              </Link>
+              <p className="hidden md:block"> Democracy Dies in Darkness</p>
             </div>
 
             {/* RIGHT */}
