@@ -32,7 +32,7 @@ export default function VideoHero() {
   }
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 border-b pb-6 sm:pb-8 mt-0 px-1 lg:p-0">
+    <section className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 border-b pb-6 sm:pb-8 mt-5 px-1 lg:p-0">
 
       {/* LEFT TEXT COLUMN */}
       <div className="md:col-span-3">
