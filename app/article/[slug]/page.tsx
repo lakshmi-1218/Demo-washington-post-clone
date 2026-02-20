@@ -124,9 +124,9 @@ import { Footer } from "@/components/wp/footer";
 
 export default function ArticlePage() {
   return (
-    <div className="bg-white text-black font-serif">
+    <div className="bg-white text-black font-serif px-2 lg-px-0">
       <Header />
-      <div className="max-w-[760px] mx-auto px-4 sm:px-6">
+      <article className="max-w-[960px] md:max-w[1000px] mx-auto sm:px-6">
 
         <p className="text-xs uppercase tracking-wide text-gray-500 mt-10">
           {articleData.category}
@@ -141,7 +141,7 @@ export default function ArticlePage() {
         </p>
 
         {/* FEATURE IMAGE */}
-        <div className="mt-8">
+        <figure className="mt-8">
           <Image
             src={articleData.featureImage.src}
             alt="Main"
@@ -149,10 +149,10 @@ export default function ArticlePage() {
             height={500}
             className="w-full object-cover"
           />
-          <p className="text-xs text-gray-500 mt-2">
+          <figcaption className="text-xs text-gray-500 mt-2">
             {articleData.featureImage.caption}
-          </p>
-        </div>
+          </figcaption>
+        </figure>
 
         {/* AUTHOR ROW */}
         <div className="flex flex-wrap items-center gap-3 mt-6 text-sm text-gray-600">
@@ -172,62 +172,62 @@ export default function ArticlePage() {
         </div>
 
         {/* FIRST CONTENT SECTION */}
-        <div className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
+        <section className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
           {articleData.contentTop.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </section>
 
         {/* AD 1 */}
-        <div className="my-10 bg-gray-100 border border-gray-300 h-[250px] flex items-center justify-center">
+        <aside className="my-10 bg-gray-100 border border-gray-300 h-[250px] flex items-center justify-center">
           <span className="text-gray-500 text-sm">Advertisement</span>
-        </div>
+        </aside>
 
         {/* MIDDLE CONTENT */}
-        <div className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
+        <section className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
           {articleData.contentMiddle.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </section>
 
-        <div className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
+        <section className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
           {articleData.contentExtended.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </section>
 
         {/* AD 2 */}
-        <div className="my-10 bg-gray-100 border border-gray-300 h-[250px] flex items-center justify-center">
+        <aside className="my-10 bg-gray-100 border border-gray-300 h-[250px] flex items-center justify-center">
           <span className="text-gray-500 text-sm">Advertisement</span>
-        </div>
+        </aside>
 
         {/* BOTTOM CONTENT */}
-        <div className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
+        <section className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
           {articleData.contentBottom.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </section>
 
-        <div className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
+        <section className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
           {articleData.contentAnalysis.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </section>
 
         {/* AD 3 */}
-        <div className="my-10 bg-gray-100 border border-gray-300 h-[250px] flex items-center justify-center">
+        <aside className="my-10 bg-gray-100 border border-gray-300 h-[250px] flex items-center justify-center">
           <span className="text-gray-500 text-sm">Advertisement</span>
-        </div>
+        </aside>
 
         {/* CLOSING CONTENT */}
-        <div className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
+        <section className="mt-8 space-y-6 text-base sm:text-[18px] leading-7 sm:leading-8 text-gray-800">
           {articleData.contentClosing.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </section>
 
         {/* MOST READ */}
-        <div className="mt-16 border-t pt-10">
+        <section className="mt-5 border-t">
           <h3 className="text-xl sm:text-2xl font-bold mb-8">
             {articleData.mostRead.title}
           </h3>
@@ -248,10 +248,10 @@ export default function ArticlePage() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* AUTHOR BIO */}
-        <div className="mt-16 border-t pt-10">
+        <section className="mt-5 border-t pt-5">
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <div className="w-16 h-16 relative flex-shrink-0 mx-auto sm:mx-0">
               <Image
@@ -276,15 +276,15 @@ export default function ArticlePage() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-      </div>
+      </article>
 
       <MoreMostFromPost />
       <NewsletterSection />
       <PaidPromotedStories />
-      
       <Footer />
     </div>
+    
   )
 }

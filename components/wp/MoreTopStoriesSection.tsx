@@ -50,7 +50,7 @@ const mostRead = [
 
 export function MoreTopStoriesSection() {
   return (
-    <section className="max-w-[1280px] mx-auto mt-2 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <section className="max-w-[1280px] mx-auto mt-2 border-b-2 border-black sm:px-4 lg:p-0">
         <div className="flex items-center">
         <h2 className="font-bold text-lg sm:text-xl text-gray-900 mb-2">More Top Stories</h2>
         <ChevronRight size={16} className="text-neutral-500" />

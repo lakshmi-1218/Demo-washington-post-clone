@@ -53,10 +53,10 @@ const sections: Section[] = [
 
 export default function SportAndOtherSection() {
   return (
-    <main className="bg-white text-neutral-900 mt-2 max-w-[1280px] border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <main className="bg-white text-neutral-900 mt-2 max-w-[1280px] border-b-2 border-black sm:px-4 lg:p-0">
       <div className="max-w-[1200px] mx-auto">
         {/* Single Row - 2 Sections */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-2 py-5">
           {sections.map((section) => (
             <div key={section.id} className="space-y-1">
               {/* Section Header */}

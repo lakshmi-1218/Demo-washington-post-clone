@@ -1,5 +1,5 @@
 "use client"
-import { useRef, useState,useEffect } from "react"
+import { useRef, useState, useEffect } from "react"
 import SidePanel from "../SidePanel"
 import NotificationPanel from "../NotificationPanel"
 import { Bell } from "lucide-react"
@@ -31,35 +31,35 @@ export function Header() {
           <div className="flex items-center justify-between">
             {/* LEFT */}
             <div className="flex items-center gap-4 text-[#4a4a4a]">
-            <button
-  aria-label="Menu and Search"
-  onClick={() => setMenuOpen(true)}
-  className="hover:text-black transition-colors"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="h-5 w-5"
-  >
-    {/* First and second lines (same length) */}
-    <line x1="3" y1="6" x2="14" y2="6" />
-    <line x1="3" y1="12" x2="14" y2="12" />
+              <button
+                aria-label="Menu and Search"
+                onClick={() => setMenuOpen(true)}
+                className="hover:text-black transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5"
+                >
+                  {/* First and second lines (same length) */}
+                  <line x1="3" y1="6" x2="14" y2="6" />
+                  <line x1="3" y1="12" x2="14" y2="12" />
 
-    {/* Third line (full length) */}
-    <line x1="3" y1="18" x2="20" y2="18" />
+                  {/* Third line (full length) */}
+                  <line x1="3" y1="18" x2="20" y2="18" />
 
-    {/* Magnifying glass circle (larger, aligned with second line vertically) */}
-    <circle cx="18" cy="10" r="4.7" />
+                  {/* Magnifying glass circle (larger, aligned with second line vertically) */}
+                  <circle cx="18" cy="10" r="4.7" />
 
-    {/* Handle of magnifying glass */}
-    <line x1="18.5" y1="13.5" x2="24" y2="22" />
-  </svg>
-</button>
+                  {/* Handle of magnifying glass */}
+                  <line x1="18.5" y1="13.5" x2="24" y2="22" />
+                </svg>
+              </button>
 
 
 
@@ -107,7 +107,7 @@ export function Header() {
 
       {/* SidePanel */}
       <SidePanel open={menuOpen} onClose={() => setMenuOpen(false)} headerHeight={headerHeight} />
-      
+
       {/* NotificationPanel */}
       <NotificationPanel open={notificationOpen} onClose={() => setNotificationOpen(false)} />
     </>

@@ -16,8 +16,8 @@ const newsletterData = {
 
 export function NewsletterSection() {
   return (
-    <div className="py-4">
-      <div className="max-w-[1024px] mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    <section className="py-4">
+      <div className="max-w-[1024px] mx-auto flex flex-col md:flex-row items-center gap-10">
 
         {/* LEFT IMAGE */}
         <div className="w-full md:w-[280px] relative">
@@ -60,6 +60,6 @@ export function NewsletterSection() {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }

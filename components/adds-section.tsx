@@ -5,7 +5,7 @@
 export function MacbookAd() {
   return (
     <section className="w-full border-y border-gray-300 py-10">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
           Sponsored
         </p>
@@ -35,7 +35,7 @@ export function MacbookAd() {
 export function SpotifyAd() {
   return (
     <section className="w-full border-b border-gray-300 py-10 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
           Sponsored
         </p>
@@ -65,7 +65,7 @@ export function SpotifyAd() {
 export function AmazonAd() {
   return (
     <section className="w-full border-b border-gray-300 py-10">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
           Sponsored
         </p>
@@ -95,7 +95,7 @@ export function AmazonAd() {
 export function TeslaAd() {
   return (
     <section className="w-full border-b border-gray-300 py-10 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto">
         <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
           Sponsored
         </p>

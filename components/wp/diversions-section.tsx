@@ -27,15 +27,15 @@ export default function DiversionsSection() {
   ];
 
   return (
-    <section className="w-full mt-2 px-2 sm:px-4 lg:p-0">
+    <section className="w-full mt-5 sm:px-4 lg:p-0">
       {/* Title Row */}
-      <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-gray-900 mb-3 sm:mb-4">
+      <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-gray-900 sm:mb-4">
       <h2 className="text-lg sm:text-xl md:text-2xl text-gray-900">Diversions</h2>
         <ChevronRight size={16} className="text-neutral-500" />
       </div>
 
       {/* Navigation Row */}
-      <div className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-gray-800">
+      <div className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-gray-800 py-2">
         {items.map((item) => {
           const Icon = item.icon;
           return (

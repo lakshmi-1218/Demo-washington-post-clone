@@ -42,8 +42,8 @@ const promotedStories = {
 
 export function PaidPromotedStories() {
   return (
-    <div className="py-6">
-      <div className="max-w-[1100px] mx-auto px-6">
+    <section className="py-6">
+      <div className="max-w-[1100px] mx-auto">
 
         {/* SECTION LABEL */}
         <div className="text-center text-gray-600 text-sm mb-10">
@@ -82,6 +82,6 @@ export function PaidPromotedStories() {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }

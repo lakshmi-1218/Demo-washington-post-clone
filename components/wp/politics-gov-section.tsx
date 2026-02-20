@@ -26,7 +26,7 @@ export function PoliticsGovernmentSection() {
     ]
   
     return (
-      <section className="max-w-[1280px] mx-auto mt-2 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+      <section className="max-w-[1280px] mx-auto mt-2 border-b-2 border-black sm:px-4 lg:p-0">
         {/* Section title */}
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold flex items-center gap-2 mb-2 text-gray-900 cursor-pointer">
           Politics & Government{" "}
@@ -34,7 +34,7 @@ export function PoliticsGovernmentSection() {
         </h2>
   
         {/* Main grid container */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 mb-2">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 mb-2 py-5">
           {/* Left content: headline + paragraph + byline */}
           <div className="lg:col-span-4 flex flex-col justify-start">
             <h3 className="font-serif text-lg sm:text-xl leading-snug mb-2 sm:mb-3">

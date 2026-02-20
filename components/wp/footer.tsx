@@ -105,12 +105,12 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t mt-10 bg-white">
+    <footer className="border-t mt-10 bg-white" suppressHydrationWarning>
 
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1200px] mx-auto px-0" suppressHydrationWarning>
 
         {/* BRAND */}
-        <div className="py-6">
+        <div className="py-4 sm:py-6">
           <h2 className="text-2xl sm:text-3xl font-serif font-bold">
             The Washington Post
           </h2>
@@ -176,7 +176,7 @@ export function Footer() {
         </div>
 
         {/* ================= DESKTOP GRID ================= */}
-        <div className="hidden md:grid grid-cols-3 lg:grid-cols-5 gap-8 py-6 border-t">
+        <div className="hidden md:grid grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 py-6 border-t">
           {footerSections.map((section) => (
             <div key={section.title}>
               <h3 className="text-sm font-bold uppercase tracking-wide mb-3">
@@ -202,7 +202,7 @@ export function Footer() {
 
       {/* ================= BOTTOM STRIP (ALL DEVICES) ================= */}
       <div className="border-t">
-        <div className="max-w-[1280px] mx-auto px-4 py-6 text-center space-y-2">
+        <div className="max-w-[1280px] mx-auto px-4 py-4 flex flex-row sm:flex-row justify-center items-center gap-2 sm:gap-3">
           <p className="text-xs text-gray-500">washingtonpost.com</p>
           <p className="text-xs text-gray-500">
             © 1996 – {new Date().getFullYear()} The Washington Post

@@ -3,6 +3,7 @@
 import React, { useRef, useState } from "react";
 import { Play, ChevronLeft, ChevronRight } from "lucide-react";
 import VideoModal from "./VideoModal";
+import Link from "next/link";
 
 type Video = {
   id: string;
@@ -70,11 +71,12 @@ export default function FeaturedVideosArrow() {
   };
 
   return (
-    <section className="max-w-[1200px] mx-auto relative mt-2 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <section className="max-w-[1200px] mx-auto relative mt-2 border-b-2 border-black px-4 lg:p-0">
       {/* Header */}
       <div className="flex justify-between items-center mb-3 sm:mb-4">
         <div className="flex items-center">
-        <h2 className="font-bold text-lg sm:text-xl text-gray-900">Featured Videos</h2>
+        <Link href="/videos">
+        <h2 className="font-bold text-lg sm:text-xl text-gray-900">Featured Videos</h2></Link>
         <ChevronRight size={16} className="text-neutral-500" />
         </div>
 
@@ -84,7 +86,7 @@ export default function FeaturedVideosArrow() {
         </button>
       </div>
 
-      <div className="relative">
+      <div className="relative py-5">
         {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}

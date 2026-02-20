@@ -175,7 +175,7 @@ export default function StylePage() {
     return (
         <div className="bg-white text-black">
             <Header />
-            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div className="max-w-[1200px] mx-auto px-2 sm:px-6 py-8 sm:py-12">
 
                 {/* PAGE HEADING */}
             <div className="mb-6 border-b">
@@ -224,25 +224,26 @@ export default function StylePage() {
 
                         {/* SECONDARY STORIES */}
                         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 border-b-2 border-black pt-8 sm:pt-10">
-                            {secondary.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className={`mb-5 grid grid-cols-[1fr_140px] sm:grid-cols-[1fr_200px] gap-4 sm:gap-6 ${index === 1 ? "md:border-l md:pl-8" : ""}`}
-                                >
-                                    <div>
-                                        <h3 className="text-xl font-bold">{item.title}</h3>
-                                        <p className="text-sm text-gray-500 mt-2">{item.date}</p>
-                                    </div>
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        width={400}
-                                        height={300}
-                                        className="object-cover"
-                                    />
-                                </div>
-                            ))}
-                        </section>
+    {secondary.map((item, index) => (
+        <div
+            key={index}
+            className={`mb-5 grid grid-cols-1 md:grid-cols-[1fr_200px] gap-4 sm:gap-6 ${index === 1 ? "md:border-l md:pl-8" : ""}`}
+        >
+            <Image
+                src={item.image}
+                alt={item.title}
+                width={400}
+                height={300}
+                className="object-cover w-full"
+            />
+
+            <div>
+                <h3 className="text-xl font-bold">{item.title}</h3>
+                <p className="text-sm text-gray-500 mt-2">{item.date}</p>
+            </div>
+        </div>
+    ))}
+</section>
                     </>
                 )}
                 <Latest/>

@@ -95,7 +95,7 @@ export default function ArtsSection() {
   }, []);
 
   return (
-    <section className="w-full bg-white mt-6 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <section className="w-full bg-white mt-6 border-b-2 border-black lg:p-0">
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
         <div className="flex items-center">

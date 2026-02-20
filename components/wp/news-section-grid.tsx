@@ -94,9 +94,9 @@ const sections: Section[] = [
 
 export default function NewsSectionGrid() {
   return (
-    <section className="max-w-[1280px] mx-auto mt-2 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <section className="max-w-[1280px] mx-auto mt-2 border-b-2 border-black sm:px-4 lg:p-0">
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 sm:gap-x-8 lg:gap-x-12 gap-y-8 sm:gap-y-12 lg:gap-y-16 mb-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 sm:gap-x-8 lg:gap-x-12 gap-y-8 sm:gap-y-12 lg:gap-y-16 mb-2 py-5">
           {sections.map((section) => (
             <div key={section.id} className="space-y-1">
               {/* Section Header (Using ID + ChevronRight) */}

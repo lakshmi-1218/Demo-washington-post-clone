@@ -23,14 +23,14 @@ const mostReadArticles = [
 
 export function MostRead() {
   return (
-    <section className="mx-auto max-w-[1280px] mt-5 border-b-2 border-black px-2 lg:px-0">
+    <section className="mx-auto max-w-[1280px] mt-5 border-b-2 border-black lg:px-0">
       {/* <div className="pt-4"> */}
-        <h2 className="font-serif font-bold text-[18px] text-wp-dark mb-6">
+        <h2 className="font-serif font-bold text-[18px] text-wp-dark mb-3">
           Most Read
         </h2>
 
         {/* Grid: 1 col mobile, 3 cols desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-8 mb-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-8 mb-3 py-5">
           {/* Item 1: Large number + category + author + headline + image */}
           <article className="flex items-start gap-4">
             <span className="text-[36px] font-serif font-bold text-wp-blue shrink-0 leading-none">

@@ -170,7 +170,7 @@ const opinions: Opinion[] = [
 ]
 export function HeroSection() {
   return (
-    <section className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-0 pt-2 mb-2 mt-5">
+    <section className="mx-auto max-w-[1280px] sm:px-6 lg:px-0 pt-2 mb-2 mt-5">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
         {/* ================= LEFT SIDE ================= */}
@@ -265,7 +265,7 @@ export function HeroSection() {
         </div>
 
         {/* ================= RIGHT SIDE ================= */}
-        <aside className="py-6 sm:py-6 lg:col-span-4 border-l border-neutral-300 pl-0 lg:pl-6 mt-8 lg:mt-0">
+        <aside className="py-6 sm:py-6 lg:col-span-4 lg:border-l lg:border-neutral-300 pl-0 lg:pl-6 mt-8 lg:mt-0">
           <div className="flex items-center justify-between">
             <h4 className="text-[13px] sm:text-[14px] font-semibold uppercase tracking-wide">
               Opinions

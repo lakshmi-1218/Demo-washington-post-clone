@@ -77,14 +77,14 @@ const newsData = [
 
 export function Latest() {
   return (
-    <section className="mx-auto max-w-[1280px] mt-5 border-b-2 border-black px-2 sm:px-4 lg:p-0">
+    <section className="mx-auto max-w-[1280px] mt-5 border-b-2 border-black sm:px-4 lg:p-0">
       <div className="flex items-center">
         <h2 className="font-bold text-lg sm:text-xl text-gray-900 mb-2">Latest From the Post</h2>
         <ChevronRight size={16} className="text-neutral-500" />
       </div>
 
       {/* SINGLE GRID FOR ENTIRE SECTION */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 py-5">
         {newsData.map((article, index) => (
           <ArticleCard
             key={index}

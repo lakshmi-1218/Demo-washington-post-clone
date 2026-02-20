@@ -199,7 +199,7 @@ export default function PhotographyPage() {
     return (
         <div className="bg-white text-black">
             <Header />
-            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div className="max-w-[1200px] mx-auto px-2 sm:px-6 py-8 sm:py-12">
                 <div className="mb-10 border-b pb-4">
                     <h1 className="text-5xl font-serif font-bold tracking-tight">
                         Photography
@@ -238,9 +238,16 @@ export default function PhotographyPage() {
                             {secondary.map((item, index) => (
                                 <div
                                     key={index}
-                                    className={`grid grid-cols-[1fr_140px] sm:grid-cols-[1fr_200px] gap-4 sm:gap-6 ${index === 1 ? "md:border-l md:pl-8" : ""
-                                        }`}
+                                    className={`grid grid-cols-1 sm:grid-cols-[1fr_200px] gap-4 sm:gap-6 ${index === 1 ? "md:border-l md:pl-8" : ""}`}
                                 >
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        width={400}
+                                        height={300}
+                                        className="object-cover w-full"
+                                    />
+
                                     <div>
                                         <h2 className="text-xl font-bold">
                                             {item.title}
@@ -249,14 +256,6 @@ export default function PhotographyPage() {
                                             {item.date}
                                         </p>
                                     </div>
-
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        width={400}
-                                        height={300}
-                                        className="object-cover"
-                                    />
                                 </div>
                             ))}
                         </section>

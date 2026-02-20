@@ -55,7 +55,7 @@ export function Navigation() {
 
       {/* DESKTOP NAVIGATION (UNCHANGED) */}
       <nav
-  className="hidden md:block border-b border-black overflow-x-auto max-w-[1024px] mx-auto scrollbar-hide"
+  className="mx-2 hidden md:block border-b border-black overflow-x-auto max-w-[1024px] lg:mx-auto scrollbar-hide"
   aria-label="Main navigation"
 >
   <ul className="flex justify-center items-center gap-1 px-2 sm:px-4">

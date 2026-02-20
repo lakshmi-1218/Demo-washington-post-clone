@@ -174,7 +174,7 @@ export default function PoliticsPage() {
     return (
         <div className="bg-white text-black">
             <Header />
-            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div className="max-w-[1200px] mx-auto px-2 py-8 sm:py-12">
 
                 {/* PAGE HEADING */}
             <div className="mb-6 border-b">

@@ -32,14 +32,14 @@ export function YourWeekendSection() {
     ]
   
     return (
-      <section className="mx-auto max-w-[1280px] border-b-2 border-black mt-2 px-2 sm:px-4 lg:p-0">
+      <section className="mx-auto max-w-[1280px] border-b-2 border-black mt-2 sm:px-4 lg:p-0">
        <div className="flex items-center">
         <h2 className="font-bold text-lg sm:text-xl text-gray-900 mb-2">Your Weekend</h2>
         <ChevronRight size={16} className="text-neutral-500" />
         </div>
   
         {/* GRID: 4 columns, responsive */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-2 py-5">
           {weekendData.map((item, index) => (
             <div key={index} className="flex flex-col">
               {/* IMAGE ON TOP */}

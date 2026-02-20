@@ -120,8 +120,8 @@ const pageData = {
 
 export default function MoreMostFromPost() {
   return (
-    <div className="bg-white text-black font-serif">
-      <div className="max-w-[1024px] mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+    <section className="bg-white text-black font-serif mt-5">
+      <div className="max-w-[1024px] mx-auto py-2 grid grid-cols-1 lg:grid-cols-3 gap-12">
 
         {/* ================= LEFT SIDE ================= */}
         <div className="lg:col-span-2">
@@ -226,6 +226,6 @@ export default function MoreMostFromPost() {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }
